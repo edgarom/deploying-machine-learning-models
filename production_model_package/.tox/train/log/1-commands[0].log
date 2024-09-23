@@ -1,0 +1,27 @@
+name: train
+run_id: commands[0]
+env HOME: /home/edgar
+env LANG: en_US.UTF-8
+env TERM: xterm-256color
+env PATH: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox/test_package/bin:/home/edgar/.local/bin:/home/edgar/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox
+env TOX_ENV_DIR: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox/test_package
+env VIRTUAL_ENV: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox/test_package
+env COLUMNS: 119
+env LINES: 15
+metadata pid: 2099588
+cwd: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package
+allow: /home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox/test_package/bin/*:train
+cmd: python predict_model/train_pipeline.py
+exit_code: 0
+
+standard error:
+/home/edgar/Documents/data_for_ml/ML_test_prod_walt/production_model_package/.tox/test_package/lib/python3.11/site-packages/pydantic/_internal/_fields.py:161: UserWarning: Field "model_parameters" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(

@@ -1,0 +1,8 @@
+uvicorn==0.30.5
+fastapi==0.112.0
+opentelemetry-instrumentation-fastapi==0.47b0
+pydantic==2.8.2
+pydantic_core==2.20.1
+typing_extensions==4.12.2
+loguru==0.7.2
+feature-engine==1.8.1

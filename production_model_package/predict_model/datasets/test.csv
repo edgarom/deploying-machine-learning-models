@@ -1,0 +1,2 @@
+Date,Location,MinTemp,MaxTemp,Rainfall,Evaporation,Sunshine,WindGustDir,WindGustSpeed,WindDir9am,WindDir3pm,WindSpeed9am,WindSpeed3pm,Humidity9am,Humidity3pm,Pressure9am,Pressure3pm,Cloud9am,Cloud3pm,Temp9am,Temp3pm,RainToday,RainTomorrow
+2016-01-01,Albury,20.4,37.6,0,NA,NA,ENE,54,NA,ESE,0,7,46,17,1013.4,1009.2,7,3,26.1,36.7,No,No

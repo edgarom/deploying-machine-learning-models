@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./weather_pred_on_production/predict_model"
+    ]
+}

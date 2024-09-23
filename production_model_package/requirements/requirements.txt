@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==2.2.2
+pydantic==2.8.2
+pydantic_core==2.20.1
+scikit-learn==1.5.2
+strictyaml==1.7.3
+feature-engine==1.8.1
+joblib==1.4.2

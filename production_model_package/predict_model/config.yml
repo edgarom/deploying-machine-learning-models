@@ -1,0 +1,130 @@
+# Package Overview
+package_name: predict_model
+
+# Data Files
+raw_data_file: weatherAUS.csv
+test_data_file: test.csv
+
+
+# Variables
+# The variable we are attempting to predict (weather)
+target: RainTomorrow
+
+pipeline_name: weather_predict_model
+pipeline_save_file: weather_predict_model_output_v
+
+features:
+  - Date 
+  - Location 
+  - MinTemp 
+  - MaxTemp
+  - Rainfall 
+  - Evaporation
+  - Sunshine
+  - WindGustDir 
+  - WindGustSpeed 
+  - WindDir9am 
+  - WindDir3pm
+  - WindSpeed9am 
+  - WindSpeed3pm 
+  - Humidity9am 
+  - Humidity3pm
+  - Pressure9am
+  - Pressure3pm 
+  - Cloud9am 
+  - Cloud3pm 
+  - Temp9am
+  - Temp3pm 
+  - RainToday
+
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 42
+
+#hyperparameters
+max_leaf_nodes: 5
+
+unused_fields:
+  - Date
+  - Location
+
+numerical_vars:
+  - MinTemp 
+  - MaxTemp
+  - Rainfall 
+  - Evaporation
+  - Sunshine
+  - WindGustDir 
+  - WindGustSpeed 
+  - WindDir9am 
+  - WindDir3pm
+  - WindSpeed9am 
+  - WindSpeed3pm 
+  - Humidity9am 
+  - Humidity3pm
+  - Pressure9am
+  - Pressure3pm 
+  - Cloud9am 
+  - Cloud3pm 
+  - Temp9am
+  - Temp3pm
+  - RainToday
+
+
+numerical_vars_with_na:
+
+  - Pressure9am
+  - Pressure3pm
+  - WindDir9am       
+  - WindGustDir      
+  - WindGustSpeed    
+  - Humidity3pm       
+  - WindDir3pm       
+  - Temp3pm           
+  - Rainfall          
+  - WindSpeed3pm      
+  - Humidity9am      
+  - WindSpeed9am      
+  - Temp9am           
+  - MinTemp
+  - MaxTemp
+  - RainToday
+
+categorical_vars:
+  - RainToday 
+
+
+wind_vars:
+  - WindGustDir
+  - WindDir9am
+  - WindDir3pm
+
+# variable mappings
+
+wind_to_assign:
+  N: 0
+  NNE: 22.5
+  NE: 45
+  ENE: 67.5
+  E: 90
+  ESE: 112.5
+  SE: 135
+  SSE: 157.5
+  S: 180
+  SSW: 202.5
+  SW: 225
+  WSW: 247.5
+  W: 270
+  WNW: 292.5
+  NW: 315
+  NNW: 337.5
+
+
+
+
+
+
+
