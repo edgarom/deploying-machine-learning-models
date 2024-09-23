@@ -1,5 +1,34 @@
 from setuptools import setup, find_packages
 
+# Package meta-data.
+NAME = 'predict-regression-model'
+DESCRIPTION = "Example regression model package from Train In Data."
+URL = "https://github.com/trainindata/testing-and-monitoring-ml-deployments"
+EMAIL = "edgarfragosogarcia@gmail.com"
+AUTHOR = "Edgar"
+REQUIRES_PYTHON = ">=3.10.0"
+
+
+# The rest you shouldn't have to touch too much :)
+# ------------------------------------------------
+
+long_description = DESCRIPTION
+
+# Load the package's VERSION file as a dictionary.
+about = {}
+ROOT_DIR = Path(__file__).resolve().parent
+REQUIREMENTS_DIR = ROOT_DIR / 'requirements'
+PACKAGE_DIR = ROOT_DIR / 'production_model_package'
+with open(PACKAGE_DIR / "VERSION") as f:
+    _version = f.read().strip()
+    about["__version__"] = _version
+
+
+# What packages are required for this module to be executed?
+def list_reqs(fname="requirements.txt"):
+    with open(REQUIREMENTS_DIR / fname) as fd:
+        return fd.read().splitlines()
+
 setup(
     name='model-to-predict_weather',
     version='0.0.1',
@@ -13,14 +42,7 @@ setup(
     python_requires='>=3.6',
     install_requires=[
         # List your project dependencies here
-        'pandas',
-        'scikit-learn',
-        'numpy',
-        'feature_engine',
-        'strictyaml',
-        'pydantic',
-        'pathlib',
-        'typing'
+        'production_model_package'
         # Add more dependencies as needed
     ],
     classifiers=[

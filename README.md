@@ -5,7 +5,7 @@ This repository contains a weather prediction model built using machine learning
 
 Why do I structure this project things this way?
 
-I tried to implement the best practices DevOps, what mean that implement `convetions` like versions, linting tools and config. `packing mandatory files` setup and MANIFEST. by the other hand `software engineering best practices` in two layers packing (split training, predict) and general (test abilility, manager data validations)
+I tried to implement the best practices DevOps, what mean that implement `convetions` like versions, linting tools and config. `packing mandatory files` setup and MANIFEST. by the other hand `software engineering best practices` in two layers packing (split training, predict, evaluation) and general (test abilility, manager data validations). the modules could be connected using a setup `pip install -e` 
 
 
 ## Table of Contents
@@ -120,3 +120,13 @@ We have a tox.ini file set up for running tests in isolated environments. You ca
 
 `cd production_model_package`
 `tox -e train`
+
+---
+
+### Key Sections:
+- **Project Structure**: A detailed breakdown of the directory and its contents.
+- **Model Training**: Instructions on how to train the model.
+- **Model Serving**: Details on running the API to serve the trained model.
+- **Setup Instructions**: Steps to set up the environment, install dependencies, and run tests.
+- **Usage**: Explanation of how to train and serve the model. 
+
